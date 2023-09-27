@@ -31,6 +31,10 @@ body {
   @apply text-black font-extrabold lg:text-6xl text-4xl;
 }
 
+.secondary_text {
+  @apply text-black font-extrabold lg:text-3xl text-2xl;
+}
+
 .orange_gradient {
   @apply bg-gradient-to-r from-amber-500 via-orange-600 to-amber-500 bg-clip-text text-transparent;;
 }
