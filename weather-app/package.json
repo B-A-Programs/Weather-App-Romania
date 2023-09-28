@@ -12,7 +12,8 @@
     "next": "latest",
     "pigeon-maps": "^0.21.3",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "recharts": "^2.8.0"
   },
   "devDependencies": {
     "autoprefixer": "latest",

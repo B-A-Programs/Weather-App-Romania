@@ -50,7 +50,7 @@ export default function City() {
         </Map>
       </div>
 
-      <Info info={ currentInfo } forecast={ forecast } />
+      <Info info={ currentInfo } forecast={ forecast } city={ city } />
 
     </main>
   )
