@@ -1,7 +1,9 @@
 'use client'
 
+import Info from '@components/Info';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation'
+import { Map, Marker } from 'pigeon-maps';
 import React, { useEffect } from 'react'
 
 export default function City() {
@@ -9,10 +11,10 @@ export default function City() {
 
   const [date, setDate] = React.useState(new Date());
   const [city, setCity] = React.useState(searchParams.get("city") || 'loading')
-  const [temp, setTemp] = React.useState('loading');
-  const [status, setStatus] = React.useState('loading')
+  const [currentInfo, setCurrentInfo] = React.useState('loading');
+  const [forecast, setForecast] = React.useState('loading')
 
-  const lat = searchParams.get("lat"); const lng = searchParams.get("lng");
+  const lat = parseFloat(searchParams.get("lat")); const lng = parseFloat(searchParams.get("lng"));
 
   const fetchWeatherData = async () => {
     const response = await fetch('/api/weather', {
@@ -24,13 +26,11 @@ export default function City() {
 
     const result = jsonResponse.response;
 
-    console.log(result);
-
     if(!city || city == "loading") {
-        setCity(result.name);
+        setCity(result.city.name);
     }
-    setTemp(result.main.temp);
-    setStatus(result.weather[0].main)
+    setCurrentInfo(result.list[0]);
+    setForecast(result.list);
   }
 
   useEffect(() => {
@@ -44,8 +44,13 @@ export default function City() {
         Weather in <div className="inline-block orange_gradient">{city}</div> on <div className="inline-block orange_gradient">{date.toDateString()}</div>
       </h1>
 
-      <div>Temperature: { temp } °C</div>
-      <div>Weather: { status }</div>
+      <div className='text-center mt-5'>
+        <Map height={170} width={1430} defaultCenter={[lat, lng]} defaultZoom={10}>
+          <Marker width={50} anchor={[lat, lng]} />
+        </Map>
+      </div>
+
+      <Info info={ currentInfo } forecast={ forecast } />
 
     </main>
   )
