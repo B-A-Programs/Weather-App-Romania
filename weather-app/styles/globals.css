@@ -56,3 +56,7 @@
 .form_input {
   @apply w-full flex rounded-2xl mt-2 p-3 text-sm text-orange-500 bg-stone-800 outline-1;
 }
+
+.search-cuisine__input {
+  @apply w-[18rem] h-14 pl-6 p-4 rounded-full max-sm:rounded-full bg-slate-100 outline-none cursor-pointer text-base font-semibold;
+}

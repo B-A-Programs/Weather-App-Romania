@@ -3,7 +3,6 @@ import InfoCard from './InfoCard'
 import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 const Info = ({ info, forecast, city }) => {
-  console.log(info)
   let data = [];
   if(forecast != "loading") {
     forecast.map((d) => {

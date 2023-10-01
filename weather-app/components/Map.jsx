@@ -10,7 +10,7 @@ const RomaniaMap = () => {
 
   return (
     <div className='mt-5'>
-        <Map height={570} width={1000} boxClassname='center' defaultCenter={[45.9442858, 25.0094303]} defaultZoom={7}>
+        <Map height={570} width={900} boxClassname='center' defaultCenter={[45.9442858, 25.0094303]} defaultZoom={7}>
             {
               cities.map((city, index) => {
                 return (
