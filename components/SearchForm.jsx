@@ -23,7 +23,7 @@ const SearchForm = () => {
                 <input id="query" className='search-cuisine__input' placeholder="Egs: 53.579" type="text" value={lng} onChange={(e) => setLng(e.target.value)} />
             </div>
 
-            <button type="submit" className='mt-3 rounded-full bg-gradient-to-r flex content-center justify-center pl-5 from-orange-500 to-amber-500 text-white text-lg font-bold py-3 px-8 gap-2'><Image src="/assets/search.png" width={30} height={30} />Search</button>
+            <button type="submit" className='mt-3 rounded-full bg-gradient-to-r flex content-center justify-center pl-5 from-orange-500 to-amber-500 text-white text-lg font-bold py-3 px-8 gap-2'><Image src="/assets/search.png" width={30} height={30} alt="search" />Search</button>
         </form>
     )
 }
