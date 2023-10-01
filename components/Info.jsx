@@ -17,10 +17,10 @@ const Info = ({ info, forecast, city }) => {
         :
         <>
           <div className='flex gap-10 mx-8 mt-6'>
-              <InfoCard svg="/images/temp.png" title="Current temperature" text={`${parseFloat(info.main.temp).toFixed(2)}°C`} future={`${parseFloat(forecast[1].main.temp - info.main.temp).toFixed(2)}°C`} />
-              <InfoCard svg="/images/wind.png" title="Wind speed" text={`${parseFloat(info.wind.speed).toFixed(2)} km/h`} future={`${parseFloat(forecast[1].wind.speed - info.wind.speed).toFixed(2)} km/h`} />
-              <InfoCard svg="/images/humidity.png" title="Humidity" text={`${parseInt(info.main.humidity)}%`} future={`${parseInt(forecast[1].main.humidity - info.main.humidity)}%`} />
-              <InfoCard svg="/images/pressure.png" title="Pressure" text={`${parseInt(info.main.pressure)}mm`} future={`${parseInt(forecast[1].main.pressure - info.main.pressure)}mm`} />
+              <InfoCard svg="/temp.png" title="Current temperature" text={`${parseFloat(info.main.temp).toFixed(2)}°C`} future={`${parseFloat(forecast[1].main.temp - info.main.temp).toFixed(2)}°C`} />
+              <InfoCard svg="/wind.png" title="Wind speed" text={`${parseFloat(info.wind.speed).toFixed(2)} km/h`} future={`${parseFloat(forecast[1].wind.speed - info.wind.speed).toFixed(2)} km/h`} />
+              <InfoCard svg="/humidity.png" title="Humidity" text={`${parseInt(info.main.humidity)}%`} future={`${parseInt(forecast[1].main.humidity - info.main.humidity)}%`} />
+              <InfoCard svg="/pressure.png" title="Pressure" text={`${parseInt(info.main.pressure)}mm`} future={`${parseInt(forecast[1].main.pressure - info.main.pressure)}mm`} />
           </div>
 
           <div className='flex justify-center items-center gap-8 lg:justify-between flex-wrap mt-6 mx-8'>
