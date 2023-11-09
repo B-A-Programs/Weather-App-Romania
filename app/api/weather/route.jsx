@@ -8,6 +8,6 @@ export const POST = async (req) => {
         return new Response(JSON.stringify({response}), {status: 200})
     } catch (error) {
         console.log(error)
-        return new Response("Failed to fetch recipe", {status: 500})
+        return new Response("Failed to fetch weather", {status: 500})
     }
 }
