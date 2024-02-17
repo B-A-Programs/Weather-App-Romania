@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Weather App
 
-## Getting Started
+Weather App is a web application that enables users to check the weather forecast for various locations, including the most important cities of Romania and anywhere in the world by latitude and longitude coordinates. The app provides comprehensive weather information such as the temperature forecast for the next week, current weather conditions, wind speed, atmospheric pressure, and more.
 
-First, run the development server:
+## Website
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+https://weather-app-romania.vercel.app/
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Location-based Weather Forecast**: Users can view the weather forecast for the most important cities of Romania and any location worldwide by providing latitude and longitude coordinates.
+- **Comprehensive Weather Information**: The app provides detailed weather information including temperature, current weather status (e.g., sunny, cloudy, rainy), wind conditions, atmospheric pressure, and more.
+- **Forecast for the Next Week**: Users can see the temperature forecast for the upcoming week, allowing them to plan ahead.
+- **Responsive Design**: Developed using Next.js, the app offers a responsive design that works seamlessly across desktop and mobile devices.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Tech Stack
 
-## Learn More
+- **Framework**: Next.js
+- **API**: Utilizes weather APIs (e.g., OpenWeatherMap, WeatherAPI) to fetch weather data for different locations.
+- **Frontend**: Built with React components for dynamic and interactive user interfaces.
+- **Styling**: Styled with CSS or styled-components for a visually appealing design.
+- **Deployment**: Deployed on hosting platform Vercel for easy accessibility.
 
-To learn more about Next.js, take a look at the following resources:
+## Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Contributions are welcome! If you'd like to contribute to the Weather App, please fork the repository and submit a pull request with your changes.
