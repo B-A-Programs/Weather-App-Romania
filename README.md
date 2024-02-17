@@ -16,7 +16,7 @@ https://weather-app-romania.vercel.app/
 ## Tech Stack
 
 - **Framework**: Next.js
-- **API**: Utilizes weather APIs (e.g., OpenWeatherMap, WeatherAPI) to fetch weather data for different locations.
+- **API**: Utilizes weather APIs (WeatherAPI) to fetch weather data for different locations + OpenStreetMap for mapping.
 - **Frontend**: Built with React components for dynamic and interactive user interfaces.
 - **Styling**: Styled with CSS or styled-components for a visually appealing design.
 - **Deployment**: Deployed on hosting platform Vercel for easy accessibility.
